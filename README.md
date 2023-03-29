@@ -11,24 +11,24 @@ To run this script, you'll need Python 3 installed on your machine, as well as t
 5. datetime
 You can install these packages using pip:
 
-##bash
+## bash
 Copy code
 pip install beautifulsoup4 requests csv sqlite3 datetime
 
 
-##Usage
+## Usage
 To use this script, you can follow these steps:
 
 ##Clone or download the repository to your local machine.
 Navigate to the repository directory in your terminal or command prompt.
 Run the following command to execute the script: 
 
-##bash
+## bash
 Copy code
 python scrape.py
 This will scrape the articles from The Verge website and save them in a CSV file and an SQLite database in the same directory as the script.
 
-#AWS Setup
+# AWS Setup
 To run this script on AWS, you can follow these steps:
 
 1. Launch an EC2 instance on AWS.
@@ -38,10 +38,10 @@ To run this script on AWS, you can follow these steps:
 5. Run the script using the same command as above.
 To save the articles daily on the server in a SQL database, you can set up a cron job on the EC2 instance to run the script at a specified time each day. Here's an example cron job that runs the script every day at 8am:
 
-##ruby
+## ruby
 Copy code
 0 8 * * * /usr/bin/python3 /path/to/scrape.py
 This will automatically execute the script each day at 8am and store the articles in the SQL database.
 
-#Conclusion
+#C onclusion
 That's it! This script can be used to scrape articles from The Verge website and store them in a CSV file and an SQLite database. By running it on a cloud service like AWS, you can save the articles daily on the server in a SQL database and ensure that you always have the latest data.
