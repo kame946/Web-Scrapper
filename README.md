@@ -43,5 +43,5 @@ Copy code
 0 8 * * * /usr/bin/python3 /path/to/scrape.py
 This will automatically execute the script each day at 8am and store the articles in the SQL database.
 
-#C onclusion
+# Conclusion
 That's it! This script can be used to scrape articles from The Verge website and store them in a CSV file and an SQLite database. By running it on a cloud service like AWS, you can save the articles daily on the server in a SQL database and ensure that you always have the latest data.
